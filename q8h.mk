@@ -10,7 +10,7 @@ PCB_PATH := $(LOCAL_PATH)/$(BOARD_PCB_VERSION)
 
 ifneq (,$(filter V1.2 V1.0,$(BOARD_PCB_VERSION)))
 	PRODUCT_COPY_FILES += frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml
-	PRODUCT_PACKAGES +=  Bluetooth
+	PRODUCT_PACKAGES += Bluetooth
 else ifeq ($(BOARD_PCB_VERSION), V5)
 	$(call inherit-product-if-exists, hardware/espressif/wlan/firmware/esp8089/device-esp.mk)
 endif
