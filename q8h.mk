@@ -60,7 +60,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.country=US
 
 #GPS Feature
-PRODUCT_PACKAGES +=  gps.polaris
+PRODUCT_PACKAGES += gps.polaris
 BOARD_USES_GPS_TYPE := simulator
 PRODUCT_COPY_FILES += frameworks/native/data/etc/android.hardware.location.xml:system/etc/permissions/android.hardware.location.xml
 
