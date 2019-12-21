@@ -1,4 +1,4 @@
-CUSTOM_FW_ID := 1.01
+CUSTOM_FW_ID      := 1.01
 BOARD_PCB_VERSION := V1.2
 
 # gms    
