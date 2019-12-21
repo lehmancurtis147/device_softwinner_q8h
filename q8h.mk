@@ -30,19 +30,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml
 
-#key and tp config file
+# key and tp config file
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sunxi-keyboard.kl:system/usr/keylayout/sunxi-keyboard.kl \
     $(LOCAL_PATH)/configs/tp.idc:system/usr/idc/tp.idc \
     $(LOCAL_PATH)/configs/gsensor.cfg:system/usr/gsensor.cfg
 
-#copy touch and keyboard driver to recovery ramdisk
+# copy touch and keyboard driver to recovery ramdisk
 PRODUCT_COPY_FILES += \
     device/softwinner/polaris-common/modules/modules/disp.ko:obj/disp.ko \
     device/softwinner/polaris-common/modules/modules/sunxi-keyboard.ko:obj/sunxi-keyboard.ko \
     device/softwinner/polaris-common/modules/modules/lcd.ko:obj/lcd.ko
 
-#recovery config
+# recovery config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery.fstab:recovery.fstab 
 
@@ -60,7 +60,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.language=en \
     persist.sys.country=US
 
-#GPS Feature
+# GPS Feature
 PRODUCT_PACKAGES    += gps.polaris
 BOARD_USES_GPS_TYPE := simulator
 PRODUCT_COPY_FILES  += frameworks/native/data/etc/android.hardware.location.xml:system/etc/permissions/android.hardware.location.xml
